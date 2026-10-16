@@ -1,13 +1,13 @@
 {
-  "name": "api-template",
-  "description": "Express API template.",
+  "name": "Obsidian-google-drive-server",
+  "description": "(Cloudflare compaitible) Light server as replacement for edge functions in obsidian-google-drive-website.",
   "version": "1.0.0",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
-    "start": "node dist/index",
-    "dev": "nodemon src/index.ts",
-    "build-files": "tsc"
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
   },
   "dependencies": {
     "cors": "^2.8.6",
